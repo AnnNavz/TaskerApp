@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TaskerApp.MainPage"
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="#EFEFEF">
+
+    <VerticalStackLayout>
+
+        <Border WidthRequest="400" HeightRequest="105" BackgroundColor="White">
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="0,0,15,15"/>
+            </Border.StrokeShape>
+            <Border.Shadow>
+                <Shadow Brush="Black"
+                        Offset="0,1"
+                        Radius="3"
+                        Opacity="0.2"/>
+            </Border.Shadow>
+
+            <Grid RowDefinitions="*,*"
+                  ColumnDefinitions="Auto, 3*, *">
+
+                <Image Grid.RowSpan="2"
+                       Source="menu.png"
+                       WidthRequest="25"
+                       Margin="30,0,0,0"/>
+
+                <Label Text="Welcome,"
+                       Grid.Column="1"
+                       FontFamily="Poppins"
+                       FontSize="14"
+                       Margin="0,30,0,0"
+                       HorizontalTextAlignment="End"/>
+
+                <Label Text="Marven James Bas"
+                       Grid.Column="1"
+                       Grid.Row="1"
+                       FontFamily="Poppins"
+                       FontAttributes="Bold"
+                       FontSize="16"
+                       Margin="0,0,0,0"
+                       HorizontalTextAlignment="End"/>
+
+                <Image Grid.Column="2"
+                       Grid.RowSpan="2"
+                       Source="user.png"
+                       WidthRequest="60"/>
+
+            </Grid>
+        </Border>
+
+        <Border WidthRequest="400" MinimumHeightRequest="640" BackgroundColor="White" Margin="0,15,0,0">
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="15,15,0,0"/>
+            </Border.StrokeShape>
+            <Border.Shadow>
+                <Shadow Brush="Black"
+                Offset="0,-1"
+                Radius="3"
+                Opacity="0.3"/>
+            </Border.Shadow>
+
+            <Grid RowDefinitions="Auto, Auto, Auto">
+
+                <HorizontalStackLayout>
+                    <Image Source="checklist.png"
+                       WidthRequest="40"
+                       Margin="30,30,0,0"
+                       HorizontalOptions="Start"/>
+
+                    <Label Text="My Tasks"
+                           FontSize="28"
+                           FontFamily="Poppins"
+                           FontAttributes="Bold"
+                           Margin="10,30,0,0"
+                           TextColor="#5E66FF"/>
+                </HorizontalStackLayout>
+                
+                
+
+            </Grid>
+        </Border>
+    </VerticalStackLayout>
+
+</ContentPage>

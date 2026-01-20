@@ -76,11 +76,89 @@
                            Margin="10,30,0,0"
                            TextColor="#5E66FF"/>
                 </HorizontalStackLayout>
-                
-                
 
-            </Grid>
-        </Border>
-    </VerticalStackLayout>
+
+                    <Label Text="Categories"
+                       Grid.Row="1"
+                       Margin="25,20,0,0"
+                       FontSize="16"
+                       FontFamily="Poppins"
+                       TextColor="#7b81ff"
+                       />
+
+                    <Frame Grid.Row="2"
+                       BackgroundColor="#DCE1EE"
+                       WidthRequest="350"
+                       HeightRequest="150"
+                       BorderColor="Transparent"
+                       Margin="0,10,0,0"/>
+
+                    <Border Grid.Row="3"
+                        WidthRequest="340"
+                        MinimumHeightRequest="300"
+                        BackgroundColor="White"
+                        Stroke="Transparent"
+                        Margin="0,30,0,0">
+
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="15"/>
+                        </Border.StrokeShape>
+
+                        <Border.Shadow>
+                            <Shadow Brush="Black"
+                                Offset="0,1"
+                                Radius="3"
+                                Opacity="0.5"/>
+                        </Border.Shadow>
+
+                        <Grid RowDefinitions="Auto, Auto">
+
+                            <HorizontalStackLayout>
+
+                                <Label Text="Pending Tasks"
+                                        Grid.Row="1"
+                                        Margin="25,20,0,0"
+                                        FontSize="18"
+                                        FontFamily="Poppins"
+                                        FontAttributes="Bold"
+                                        TextColor="#7b81ff"
+                                        />
+
+                                <Label Text="0"
+                                        Grid.Row="1"
+                                        Margin="8,22,0,0"
+                                        FontSize="15"
+                                        FontFamily="Poppins"
+                                        TextColor="#7b81ff"
+                                        />
+
+                                <Button Text="See More"
+                                        Grid.Row="1"
+                                        Margin="50,11,0,0"
+                                        x:Name="SeeMore"
+                                        Clicked="SeeMore_Clicked"
+                                        FontSize="15"
+                                        FontFamily="Poppins"
+                                        TextColor="#7b81ff"
+                                        BackgroundColor="Transparent"
+                                        />
+                                
+                                
+                            </HorizontalStackLayout>
+                            
+                        </Grid>
+
+                    </Border>
+
+
+
+
+
+
+
+                </Grid>
+            </Border>
+        </VerticalStackLayout>
+              
 
 </ContentPage>

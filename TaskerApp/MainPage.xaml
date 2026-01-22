@@ -5,7 +5,9 @@
              Shell.NavBarIsVisible="False"
              BackgroundColor="#EFEFEF">
 
-    <ScrollView>
+    <Grid>
+
+        <ScrollView>
 
         <VerticalStackLayout>
 
@@ -15,7 +17,7 @@
                 </Border.StrokeShape>
                 <Border.Shadow>
                     <Shadow Brush="Black"
-                        Offset="0,4"
+                        Offset="0,2"
                         Radius="3"
                         Opacity="0.2"/>
                 </Border.Shadow>
@@ -60,7 +62,7 @@
                 </Border.StrokeShape>
                 <Border.Shadow>
                     <Shadow Brush="Black"
-                Offset="0,-2"
+                Offset="0,-1"
                 Radius="3"
                 Opacity="0.3"/>
                 </Border.Shadow>
@@ -118,9 +120,11 @@
                                    FontAttributes="Bold"
                                    FontFamily="cent"
                                    FontSize="22"
+                                   TextColor="White"
                                    Margin="20,25,0,0"/>
                             
                             <Label Text="Pending: "
+                                   TextColor="White"
                                    FontFamily="Poppins"
                                    FontSize="14"
                                    Margin="20,3,0,0"/>
@@ -190,6 +194,14 @@
         </VerticalStackLayout>
 
     </ScrollView>
+        <Image Source="plus.png"
+               VerticalOptions="End"
+               HorizontalOptions="End"
+               WidthRequest="100"
+               Margin="10"/>
+    </Grid>
+
+
               
 
 </ContentPage>
